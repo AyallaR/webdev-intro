@@ -1,0 +1,43 @@
+table, td {
+    border:1px solid black;
+    text-align:right;
+  }
+table {
+    width: 700px;
+}
+caption {
+    font-size:x-large;
+    font-weight: bolder;
+}
+th {
+    text-align:center;
+    width: 22%;
+    background-color: rgb(201, 141, 241);
+    font-size: large;
+    font-style: oblique;
+}
+.row1 {
+    background-color: #D6EEEE;
+}
+.hypelin {
+    text-decoration:none;
+}
+.emoj {
+    text-align:left;
+}
+.row2 {
+    background-color: lightyellow;
+}
+.row3 {
+    background-color: lightpink;
+}
+.row4 {
+    background-color: rgb(129, 233, 197);
+}
+#hyphome {
+    text-decoration-style:double;
+    text-decoration-color: tomato;
+}
+tr.emoj td {
+    text-align: left;
+}
