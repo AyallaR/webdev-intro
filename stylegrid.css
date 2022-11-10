@@ -1,0 +1,105 @@
+body.dark{
+    background-color: rgb(75, 72, 72);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Helvetica;
+    font-size: 1.4em;
+    color: rgb(3, 3, 3);
+    text-align: left;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    background-color:rgb(255, 39, 147);
+    color: inherit;
+  }
+
+.container {
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-areas: 
+        "h h "
+        "a b "
+        "f f "
+    ;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    grid-area: h;
+    background-color: #66bdf8;
+    display: inline;
+    float:left;
+       
+}
+
+nav {
+    grid-area: a;
+    background-color: #af56fd;
+    padding: .5em;
+            
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+nav ul li:nth-child(odd){
+    background-color: #b777ee;
+}
+
+main {
+    display: inline-flexbox;
+    text-align: center;
+    color: rgb(10, 10, 10);
+    grid-area: b;
+    background-color: #fefefe;
+    min-height:250px;
+    overflow: auto;
+    
+}
+
+footer {
+    grid-area: f;
+    background-color: #6be9ce;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    
+}
+#forming{
+    text-align: left;
+}
+.logo{
+    display: inline;
+    float:right;
+}
+
+section {
+    height: 100vh;
+}
+.form-personal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    border: rgb(38, 209, 218) 5px solid;
+    align-items:flex-start;
+}
+.form-feed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    border: rgb(110, 38, 218) 5px solid;
+    align-items:flex-start;
+}
