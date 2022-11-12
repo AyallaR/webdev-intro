@@ -12,84 +12,132 @@
     <body>
         <div class="container">
             <header>
-                <div><a href="#welcome"></a><h1>&#127800;WebDev Bootcamp
-                    <span class="logo">👩🏻‍💻</span>
+                <div><a href="#top-of-page"><h1>&#127800;Ayalla site
+              </a><span class="logo">👩🏻‍💻</span>
                 </div>
             </h1></header>
             <nav>
                 <ul>
-                    <li><a href="#welcome"></a>Navigation</li>
-                    <li><a href="#My Favorite Movie">My Favorite Movie</a></li>
-                    <li><a href="#enjoyed">A place i enjoyed</a></li>
-                    <li><a href="#forming">Feedback From</a></li>
+                    <li>Navigation</li>
+                    <li><a href="#Movie">My Favorite Movie</a></li>
+                    <li><a href="#enjoyed">My Favorite Place</a></li>
+                    <li><a href="#forming">Feedback Form</a></li>
                     <li><a href="./schoolsTable.html" target="_blank">My school</a></li>
                     <li><a href="https://github.com/AyallaR/webdev-intro.git" target="_blank">This Project on GitHub</a></li>
                 </ul>
 
             </nav>
             <main id="b">
-                <Section id="welcome"><div><h2>Hello!</h2></div>
-                    <div><h1>Welcome to my website.</h1></div>
-                    <div><h1>My name is ayalla rushinek. i'm a student on the WebDev bootcamp.</h1></div>
-                    <div>These are my three favorite emojis:</div>
-                    <div>🤦🏻‍♀️ 😅 🧘🏻</div>
+                <Section id="top-of-page"><div><h3>Hello!</h3></div><br>
+                    <div><h1>Welcome to my website.</h1></div><br>
+                    <div><h1>My name is Ayalla Rushinek. i'm a student on the WebDev bootcamp.</h1></div><br>
+                    <div>These are my three favorite emojis:</div><br>
+                    <div>🤦🏻‍♀️  😅  🧘🏻</div>
                 </Section>
                 
-                <section id="My Favorite Movie">
+                <section id="Movie">
+                    <div class="txt">
+                        <p><h4>My favorite movie is:</h4><br><h5> 
+                        The Notebook: </h5>The Notebook is a 2004 American romantic drama film directed by Nick Cassavetes, with a screenplay by Jeremy Leven and Jan Sardi, based on the 1996 novel of the same name by Nicholas Sparks. The film stars Ryan Gosling and Rachel McAdams as a young couple who fall in love in the 1940s. Their story is read from a notebook in the present day by an elderly man (played by James Garner), telling the tale to a fellow nursing home resident (played by Gena Rowlands, the director Cassavetes' mother).
+                    </p><br>
+                        <p><h5>Best The Notebook Quotes:</h5>
+                            <li>"So it's not gonna be easy..".</li>
+                            <li>"This is just a fight we're having and tomorrow it'll be like it never happened, right?...". </li>
+                        </p>
+                    </div>
+                    <div class="pic-lin">
+                        <img src=https://m.media-amazon.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_.jpg width="200" height="250">
+                        <p>
+                        <a href="https://www.imdb.com/title/tt0332280/?ref_=nv_sr_srsg_00" target="_blank">Link to the IMDB</a>   
+                        </p>
+                    </div>
                 </section>
                 
                 <section id="enjoyed">
+                    <div class="txt">
+                        <p><h4>My favorite place is:</h4><br><h5> 
+                            Pizza Linga </h5>i think it's the best pizza i have ever eaten and it's relatively close to my house :).
+                    </p><br>
+                        <p><h5>Best moto of life&pizza:</h5>
+                            "Pizza is not a 'trend' it's a way of life"
+                        </p>
+                    </div>
+                    <div class="pic-lin">
+                      <div class="pictures-scroll" class="pictures">
+                        <img class="thumbnail" id="pic" src="https://images.happycow.net/venues/1024/91/33/hcmp91331_686835.jpeg" width="200" height="250"></img>
+                        <img class="thumbnail" id="pic" src="https://images.happycow.net/venues/1024/91/33/hcmp91331_686835.jpeg" width="200" height="250"></img>
+                        <img class="thumbnail" id="pic" src="https://images.happycow.net/venues/1024/91/33/hcmp91331_686835.jpeg" width="200" height="250"></img>
+                      </div>
+                      <div>
+                        <a href="https://www.google.co.il/maps/place/%D7%A4%D7%99%D7%A6%D7%94+%D7%9C%D7%99%D7%A0%D7%92%D7%94%E2%80%AD/@32.8196129,34.9983553,18z/data=!4m5!3m4!1s0x151dba3506ce06e7:0xe7a2c68bef192fb7!8m2!3d32.8196128!4d34.997364?hl=iw" target="_blank"> Link to the place via google map</a>
+                    </div>
                 </section>
 
                 <section id="forming">
-                    <p>Feedback From</p>
-                    <p>I'd love to hear your honest thoughts!</p>
+                    <p><h4>Feedback Form</h4></p><br>
+                    <p>I'd love to hear your honest thoughts!</p><br>
                     <form action="#" method="get">
                         <div class="form-personal">
-                            <label>Personal Deatails</lable><br>
-                          <p>
-                            <label for="fname">Full name:</label>
-                            <input type="text" id="fname" name="fname" required></p>
-                          <p>
-                              <label for="phone">Phone Number:</label>
-                            <input type="number" id="phone" name="phone" ><br></p>
+                            <p>
+                                <label>Enter Personal Deatails-</label>
+                                <br>
+                            </p>
+                            
+                            
+                            <p>
+                                <label for="fname">Full name:
+                                    <input type="text" name="fname" pattern="[א-תa-zA-Z]+" required></label>
+                            </p>
 
-                          <p>
-                            <label for="mail">Email:
-                            <input type="email" id="mail" name="mail" required></label></p>
-                          <p> 
-                            <label for="datebirth">Date of birth:</label>
-                            <input type="date" id="datebirth" name="datebirth" value="2000-01-01" min="1900-01-01" max="2050-01-01"><br></p>
+                            <span><p>
+                                <label for="phone">Phone Number:
+                                    <input type="number" id="phone" name="phone" ></label>
+                            </p></span><br>
+
+                            <p>
+                                <label for="mail">Email:
+                                    <input type="email" id="mail" name="mail" required></label>
+                            </p>
+
+                            <span><p> 
+                                <label for="datebirth">Date of birth:</label>
+                                <input type="date" id="datebirth" name="datebirth" value="2000-01-01" min="1900-01-01" max="2050-01-01">
+                            </p></span><br>
                         </div>
-                    </form><br>
-                    <form action="#" method="GET">
+                    <br>
+                    
                         <div class="form-feed">
-                            <label>Your Feedback</lable><br>
-                          <p>
-                            <label>Rating:
-                            <input type="radio" id="rating" name="fname" >1
-                            <input type="radio" id="rating" name="fname" >2
-                            <input type="radio" id="rating" name="fname" >3
-                            <input type="radio" id="rating" name="fname" >4
-                            <input type="radio" id="rating" name="fname" >5
-                            </label>
-                          <p><label>Your message:<textarea name="megg" cols="10" rows="3"></textarea></label>
-                          <p><label for="web">How did you find this website:</label>
+                            <label>Your Feedback-</lable><br>
+                            <p><br>
+                                <label>Rating:
+                                    <input type="radio" name="r">1
+                                    <input type="radio" name="r">2
+                                    <input type="radio" name="r">3
+                                    <input type="radio" name="r">4
+                                    <input type="radio" name="r">5
+                                </label>
+                            </p><br>
+                            <p>Your message:<br><span><textarea name="megg"></textarea></p>
+                            </span><br>
+                            <p><label for="web">How did you find this website:</label>
                             <select name="websites" id="web">
+                              <option selected disabled>Slecet option</option>
                               <option value="gith">GitHub</option>
                               <option value="linke">LinkedIn</option>
                               <option value="webd">WebDev</option>
                               <option value="google">Google</option>
+                              <option value="face">Facebok</option>
                               <option value="other">Other</option>
                             </select>
                             <br>
-                            <input type="submit" value="submit" /></label>
-                            <input type="reset" value="reset" /></label>
+                            <br>
+                            <input id="insu" type="submit" value="submit" /></label>
+                            <input id="inre" type="reset" value="reset" /></label>
                              
                         </div>
                     </form>
                 </section>
-            </main>
+            </main>         
             <footer>
                 <div>Ayalla Rushinek</div>
                 <div><a href="mailto: ayr569@gamil.com">ayr569@gamil.com</a></div>
