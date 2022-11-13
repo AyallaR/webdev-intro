@@ -1,0 +1,242 @@
+body.dark{
+    background-color: rgb(75, 72, 72);
+    
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Helvetica;
+    font-size: 1.4em;
+    color: rgb(3, 3, 3);
+    text-align: left;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    background-color:rgb(255, 39, 147);
+    color: inherit;
+  }
+  a:hover[href*="#top-of-page"] {
+    background-color:rgb(248, 203, 226);
+    color: rgb(236, 135, 236);
+  }
+  .logo{
+    display: inline;
+    float:right;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-areas: 
+        "h h "
+        "a b "
+        "f f "
+    ;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  header {
+    grid-area: h;
+    background-image: radial-gradient(
+      circle,#66bdf8,#acd7f3);
+    display: inline;
+    float:left;
+       
+  }
+  
+  nav {
+    grid-area: a;
+    background-image: linear-gradient(#b368f5,#d6b6f1);
+    padding: .5em;
+              
+  }
+  nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    
+  }
+  nav ul li:nth-child(odd){
+    background-color: #c896f3;
+  }
+  
+  main {
+    display: inline-flexbox;
+    text-align: center;
+    margin: 0px;
+    padding: 15px;
+    color: rgb(10, 10, 10);
+    grid-area: b;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(#fefefe,#fdf8e8,#c5d5df);
+    min-height: 250px;
+    overflow: auto;
+    top: 50px;
+    bottom: 50px;
+  }
+  
+  #Movie,#enjoyed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: fit-content;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+  }
+  
+  .pic-lin{
+    display: flex;
+    flex-direction: column;
+  }
+  .pic-lin a{
+    display: block;
+    text-align: center;
+    
+  }
+  .pic-lin a:hover{
+      background-color:transparent;
+  }
+  
+  #pic:hover{
+    object-position: top center;
+    transform: scale(2);
+    transform-style: all;
+  }
+
+  .pictures-scroll{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-height: 50vh;
+    max-width: 30vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 2.5px solid rgb(153, 70, 70);
+  }
+  .thumbnail { 
+    top:-50px; 
+    left:-35px; 
+    display:block; 
+    z-index: 99;
+    cursor: pointer; 
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+    } 
+
+
+  footer {
+    grid-area: f;
+    background-image:repeating-radial-gradient(circle,#6be9ce,#a5e6d7);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  #forming {
+    text-align: left;
+    padding: 15px;
+    color: rgb(10, 10, 10);
+    overflow: auto;
+    top: 50px;
+    bottom: 50px;
+  }
+   
+  section {
+    height: 100vh;
+  }
+  
+  .form-personal{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap; 
+    justify-content:first baseline; 
+    border: rgb(38, 209, 218) 5px solid;
+    align-items:center;
+    align-content: space-around;
+    gap: 10px 50px;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow:0 0 15px rgb(38, 209, 218);
+  }
+  .form-feed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: first baseline; 
+    border: rgb(110, 38, 218) 5px solid;
+    align-items:flex-start;
+    align-content: space-around;
+    gap: 10px 50px;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgb(236, 135, 236);
+    text-align:inherit;
+  }
+  textarea {
+    border: 2px dashed plum;
+    background:local;
+    width: 150px;
+    height: 5em;
+  }
+  
+  input{
+    background: rgb(228, 247, 228);
+  }
+  #insu{
+    font-size: medium;
+    border-radius: 35px;
+    background-position: 1em;
+    background-color: #f3b0c5;
+    font-style:oblique;
+    padding: 6px;
+  }
+  #inre{
+    font-size: medium;
+    border-style: 35px;
+    background-position: 1em;
+    background-color: rgb(253, 244, 189);
+    font-style:oblique;
+    padding: 6px;
+  }
+  
+  @media screen and (max-device-width:480px) {
+    .container{
+        display: inline-block;
+        width: 100%;
+    }
+    header {
+      position: static;
+    }
+  
+    nav {
+      width:100vw;
+      position: sticky;
+      top: 0;
+    }
+  
+    main {
+      padding-top: 10px;
+    }
+  
+    section {
+      position: relative;
+      
+    }
+  
+    footer {
+      position: static;
+      bottom: 0;
+    }
+  }
+  
